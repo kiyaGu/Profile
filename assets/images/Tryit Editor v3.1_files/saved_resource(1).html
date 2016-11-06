@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body contenteditable="false">
+
+<p>Click the button to get a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Good evening</p>
+
+<script>
+function myFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "Good morning";
+    } else if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+
+
+</body></html>
